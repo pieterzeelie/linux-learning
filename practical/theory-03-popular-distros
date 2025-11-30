@@ -1,0 +1,3 @@
+sudo apt update                     # Refresh package lists
+sudo apt upgrade                     # Upgrade installed packages
+apt list --installed | head -20      # Show first 20 installed packages
