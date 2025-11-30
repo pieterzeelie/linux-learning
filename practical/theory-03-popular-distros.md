@@ -1,16 +1,16 @@
 ## Basic APT Commands in Ubuntu (WSL)
 
-''''bash
+````bash
 # Refresh package lists
 
 sudo apt update 
 
-''''bash
+````bash
 # Upgrade installed packages
 
 sudo apt upgrade  
 
-''''bash
+````bash
 # Show first 20 installed packages
 
 apt list --installed | head -20      
