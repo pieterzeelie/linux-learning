@@ -10,7 +10,6 @@ ls -l
 
 ## 📦 Package management 
 
-```bash
 # Linux (Ubuntu/Debian)
 sudo apt-get install nginx
 
@@ -18,7 +17,7 @@ sudo apt-get install nginx
 pkgadd -d nginx.pkg
 
 ## ⚙️ Process management
-```bash
+
 # Linux
 ps aux | grep python
 
