@@ -1,9 +1,10 @@
-# 📝 Linux command cheat sheet: Basic
+<details>
+<summary><span style="font-size:1.5em; font-weight:bold;">📝 Linux command cheat sheet: Basic</summary>
 
 <details>
 <summary> 📂 list (ls) command</summary>
   
-# Linux Cheat Sheet: 'ls' Command
+# Linux Cheat Sheet: `ls` Command
 
 | Command                       | Description                                                            | Example Output/Use Case                       |
 | ----------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- |
@@ -30,7 +31,7 @@
 <details>
 <summary> 📂 print working directory (pwd) command</summary>
 
-# Linux Cheat Sheet: 'pwd' Command
+# Linux Cheat Sheet: `pwd` Command
 
 | Command     | Description                         | Example Output        |
 | ----------- | ----------------------------------- | --------------------- |
@@ -45,7 +46,7 @@
 <details>  
 <summary> 📂 make directory (mkdir) command</summary>
 
-# Linux Cheat Sheet: 'mkdir' Command
+# Linux Cheat Sheet: `mkdir` Command
 
 | Command / Option         | Description                                                                | Example Usage                     | Example Output / Notes                       |
 | ------------------------ | -------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------- |
@@ -66,7 +67,7 @@
   
 <summary> 📂 change directory (cd) command</summary>
 
-# Linux Cheat Sheet: 'cd' Command
+# Linux Cheat Sheet: `cd` Command
 
 | Command / Option  | Description                                             | Example Usage    | Example Output / Notes                      |
 | ----------------- | ------------------------------------------------------- | ---------------- | ------------------------------------------- |
@@ -87,7 +88,7 @@
   
 <summary> 📂 remove directory (rmdir) command</summary>
 
-# Linux Cheat Sheet: 'rmdir' Command
+# Linux Cheat Sheet: `rmdir` Command
 
 | Command / Option                            | Description                                                        | Example Usage                           | Example Output / Notes                                      |
 | ------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- | ----------------------------------------------------------- |
@@ -105,7 +106,7 @@
   
 <summary> 📂 copy-paste (cp) command</summary>
 
-# Linux Cheat Sheet: 'cp' Command
+# Linux Cheat Sheet: `cp` Command
 
 | Command / Option         | Description                                                                 | Example Usage               | Example Output / Notes                       |
 | ------------------------ | --------------------------------------------------------------------------- | --------------------------- | -------------------------------------------- |
@@ -123,7 +124,7 @@
   
 <summary> 📂 move/rename (mv) command</summary>
 
-# Linux Cheat Sheet: 'mv' Command
+# Linux Cheat Sheet: `mv` Command
 
 | Command / Option      | Description                                               | Example Usage                  | Example Output / Notes                            |
 | --------------------- | --------------------------------------------------------- | ------------------------------ | ------------------------------------------------- |
@@ -143,7 +144,7 @@
   
 <summary> 📂 remove file (rm) command</summary>
 
-# Linux Cheat Sheet: 'rm' Command
+# Linux Cheat Sheet: `rm` Command
 
 | Command / Option       | Description                                                             | Example Usage          | Example Output / Notes                      |
 | ---------------------- | ----------------------------------------------------------------------- | ---------------------- | ------------------------------------------- |
@@ -162,7 +163,7 @@
   
 <summary> 📂 unix name (uname) command</summary>
 
-# Linux Cheat Sheet: 'uname' Command
+# Linux Cheat Sheet: `uname` Command
 
 | Command / Option | Description                                      | Example Usage | Example Output / Notes             |
 | ---------------- | ------------------------------------------------ | ------------- | ---------------------------------- |
@@ -183,7 +184,7 @@
   
 <summary> 📂 locate command</summary>
 
-# Linux Cheat Sheet: locate Command
+# Linux Cheat Sheet: `locate` Command
 
 | Command / Option           | Description                                                              | Example Usage                  | Example Output / Notes                      |
 | -------------------------- | ------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------- |
@@ -203,7 +204,7 @@
   
 <summary> 📂 touch command</summary>
 
-# Linux Cheat Sheet: touch Command
+# Linux Cheat Sheet: `touch` Command
 
 | Command / Option                      | Description                                                               | Example Usage                    | Example Output / Notes                          |
 | ------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------- |
@@ -221,7 +222,7 @@
   
 <summary> 📂 link (ln) command</summary>
 
-# Linux Cheat Sheet: 'ln' Command
+# Linux Cheat Sheet: `ln` Command
 
 | Command / Option      | Description                                           | Example Usage                       | Example Output / Notes                          |
 | --------------------- | ----------------------------------------------------- | ----------------------------------- | ----------------------------------------------- |
@@ -296,7 +297,7 @@
 
 <summary> 📂 running processes (ps) command</summary>
 
-# Linux Cheat Sheet: ps Command
+# Linux Cheat Sheet: `ps` Command
 
 | Command / Option   | Description                                              | Example Usage    | Example Output / Notes                         |
 | ------------------ | -------------------------------------------------------- | ---------------- | ---------------------------------------------- |
@@ -316,61 +317,205 @@
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 manual page (man) command</summary>
+
+# Linux Cheat Sheet: `man` Command
+
+| Command / Option      | Description                                                         | Example Usage   | Example Output / Notes                        |
+| --------------------- | ------------------------------------------------------------------- | --------------- | --------------------------------------------- |
+| `man command`         | Display the manual page for a command.                              | `man ls`        | Shows documentation for `ls`.                 |
+| `man -f command`      | Show a short description (same as `whatis`).                        | `man -f ls`     | "ls (1) - list directory contents"            |
+| `man -k keyword`      | Search manual pages for a keyword (same as `apropos`).              | `man -k copy`   | Lists all commands related to "copy".         |
+| `man section command` | Display manual page from a specific section.                        | `man 5 passwd`  | Shows file format info from section 5.        |
+| `man -a command`      | Display all manual pages matching the command, one after another.   | `man -a intro`  | Shows multiple `intro` pages across sections. |
+| `man -w command`      | Show the location of the manual page file instead of displaying it. | `man -w ls`     | Prints path to the `ls` man page file.        |
+| `man --help`          | Display help information for `man`.                                 | `man --help`    | Shows usage guide.                            |
+| `man --version`       | Display version and license info.                                   | `man --version` | Prints version details.                       |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 search (grep) command</summary>
+
+# Linux Cheat Sheet: `grep` Command
+
+| Command / Option                    | Description                                        | Example Usage                    | Example Output / Notes                      |
+| ----------------------------------- | -------------------------------------------------- | -------------------------------- | ------------------------------------------- |
+| `grep pattern file`                 | Search for a pattern in a file.                    | `grep hello file.txt`            | Prints lines containing "hello".            |
+| `grep -i pattern file`              | Case-insensitive search.                           | `grep -i linux file.txt`         | Matches `Linux`, `LINUX`, `linux`, etc.     |
+| `grep -n pattern file`              | Show line numbers with matches.                    | `grep -n main program.c`         | Displays matching lines with line numbers.  |
+| `grep -c pattern file`              | Count the number of matching lines.                | `grep -c error log.txt`          | Prints number of lines containing "error".  |
+| `grep -v pattern file`              | Invert match (show lines that do NOT match).       | `grep -v foo file.txt`           | Displays all lines except those with "foo". |
+| `grep -l pattern *`                 | Show only filenames containing the match.          | `grep -l TODO *.c`               | Lists `.c` files containing "TODO".         |
+| `grep -w pattern file`              | Match whole words only.                            | `grep -w test file.txt`          | Matches "test" but not "testing".           |
+| `grep -r pattern dir/`              | Recursively search in all files under a directory. | `grep -r main ./src`             | Searches "main" in all files under `src/`.  |
+| `grep -e pattern1 -e pattern2 file` | Search for multiple patterns.                      | `grep -e cat -e dog animals.txt` | Matches lines containing "cat" or "dog".    |
+| `grep --color pattern file`         | Highlight matched text in output.                  | `grep --color error log.txt`     | Highlights "error" in results.              |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 echo command</summary>
+
+# Linux Cheat Sheet: `echo` Command
+
+| Command / Option       | Description                                                         | Example Usage               | Example Output / Notes                       |
+| ---------------------- | ------------------------------------------------------------------- | --------------------------- | -------------------------------------------- |
+| `echo text`            | Print text to standard output.                                      | `echo Hello World`          | `Hello World`                                |
+| `echo $VAR`            | Print the value of a variable.                                      | `echo $HOME`                | `/home/user`                                 |
+| `echo "text" > file`   | Redirect output into a file (overwrite).                            | `echo "Hello" > hello.txt`  | Creates/overwrites `hello.txt` with "Hello". |
+| `echo "text" >> file`  | Append output to a file.                                            | `echo "World" >> hello.txt` | Adds "World" to `hello.txt`.                 |
+| `echo *`               | Print all files/directories in current directory (shell expansion). | `echo *`                    | Lists files in current directory.            |
+| `echo -n text`         | Print text without trailing newline.                                | `echo -n "Hello"`           | Outputs `Hello` without moving to new line.  |
+| `echo -e "text\ntext"` | Enable interpretation of backslash escapes (e.g., newline, tab).    | `echo -e "Hello\nWorld"`    | Prints `Hello` then `World` on next line.    |
+| `echo $?`              | Print exit status of last command.                                  | `echo $?`                   | `0` if success, non-zero if error.           |
+| `echo $$`              | Print process ID of current shell.                                  | `echo $$`                   | Displays PID of current shell.               |
+| `echo $USER`           | Print current logged-in username.                                   | `echo $USER`                | `pieter` (example).                          |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 network downloader (Wget) command</summary>
+
+# Linux Cheat Sheet: `wget` Command
+
+| Command / Option                  | Description                                                 | Example Usage                                     | Example Output / Notes                       |
+| --------------------------------- | ----------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------- |
+| `wget URL`                        | Download a file from the web.                               | `wget https://example.com/file.zip`               | Saves `file.zip` in current directory.       |
+| `wget -O filename URL`            | Download and save with a custom filename.                   | `wget -O new.zip https://example.com/file.zip`    | Saves file as `new.zip`.                     |
+| `wget -c URL`                     | Resume an incomplete download.                              | `wget -c https://example.com/file.zip`            | Continues download from where it stopped.    |
+| `wget -b URL`                     | Download in background mode.                                | `wget -b https://example.com/file.zip`            | Runs in background, logs to `wget-log`.      |
+| `wget -i file.txt`                | Download URLs listed in a file.                             | `wget -i urls.txt`                                | Downloads all URLs from `urls.txt`.          |
+| `wget --limit-rate=200k URL`      | Limit download speed.                                       | `wget --limit-rate=200k https://example.com`      | Restricts speed to 200 KB/s.                 |
+| `wget --progress=dot URL`         | Show progress in dot style instead of default bar.          | `wget --progress=dot https://example.com`         | Displays progress with dots.                 |
+| `wget --spider URL`               | Check if a file exists on the server (without downloading). | `wget --spider https://example.com/file.zip`      | Reports availability of file.                |
+| `wget -r URL`                     | Recursively download files from a website.                  | `wget -r https://example.com/dir/`                | Downloads all files under `/dir/`.           |
+| `wget --no-check-certificate URL` | Ignore SSL certificate errors.                              | `wget --no-check-certificate https://example.com` | Downloads even with invalid SSL certificate. |
+| `wget --help`                     | Display help information for `wget`.                        | `wget --help`                                     | Shows usage guide.                           |
+| `wget --version`                  | Display version and license info.                           | `wget --version`                                  | Prints version details.                      |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 whoami command</summary>
+
+# Linux Cheat Sheet: `whoami` Command
+
+| Command / Option   | Description                                        | Example Usage      | Example Output / Notes  |
+| ------------------ | -------------------------------------------------- | ------------------ | ----------------------- |
+| `whoami`           | Prints the username of the current effective user. | `whoami`           | `pieter` (example).     |
+| `whoami --help`    | Display help information for `whoami`.             | `whoami --help`    | Shows usage guide.      |
+| `whoami --version` | Display version and license info.                  | `whoami --version` | Prints version details. |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 sort command</summary>
+
+# Linux Cheat Sheet: `sort` Command
+
+| Command / Option              | Description                                            | Example Usage                     | Example Output / Notes                  |
+| ----------------------------- | ------------------------------------------------------ | --------------------------------- | --------------------------------------- |
+| `sort file.txt`               | Sort lines in a file alphabetically (ASCII order).     | `sort names.txt`                  | Outputs lines sorted A → Z.             |
+| `sort -r file.txt`            | Sort lines in reverse (descending order).              | `sort -r names.txt`               | Outputs lines Z → A.                    |
+| `sort -n file.txt`            | Sort numerically (treats numbers as values, not text). | `sort numbers.txt`                | Orders `1, 2, 10, 21` correctly.        |
+| `sort -nr file.txt`           | Sort numerically in reverse order.                     | `sort -nr numbers.txt`            | Orders largest → smallest.              |
+| `sort -k column file.txt`     | Sort by a specific column (useful for tables).         | `sort -k 2 data.txt`              | Sorts by second column.                 |
+| `sort -u file.txt`            | Sort and remove duplicate lines (unique output).       | `sort -u items.txt`               | Outputs sorted list without duplicates. |
+| `sort -c file.txt`            | Check if a file is already sorted; reports disorder.   | `sort -c names.txt`               | Prints error if not sorted.             |
+| `sort -M file.txt`            | Sort by month names (Jan, Feb, etc.).                  | `sort -M months.txt`              | Orders by calendar month.               |
+| `sort -o output.txt file.txt` | Save sorted output into a file.                        | `sort -o sorted.txt unsorted.txt` | Writes sorted result to `sorted.txt`.   |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 calendar (cal) command</summary>
+
+# Linux Cheat Sheet: `cal` Command
+
+| Command / Option | Description                                                | Example Usage   | Example Output / Notes                      |
+| ---------------- | ---------------------------------------------------------- | --------------- | ------------------------------------------- |
+| `cal`            | Display the current month’s calendar.                      | `cal`           | Shows calendar for current month.           |
+| `cal year`       | Display the calendar for an entire year.                   | `cal 2025`      | Prints all months of year 2025.             |
+| `cal month year` | Display calendar for a specific month and year.            | `cal 12 2025`   | Shows December 2025 calendar.               |
+| `cal -3`         | Display previous, current, and next month together.        | `cal -3`        | Shows three consecutive months.             |
+| `cal -m month`   | Display calendar for a specific month of the current year. | `cal -m 7`      | Shows July of current year.                 |
+| `cal -y`         | Display calendar for the current year.                     | `cal -y`        | Prints all months of current year.          |
+| `cal -j`         | Display Julian calendar (day numbers starting from Jan 1). | `cal -j`        | Shows day-of-year numbers instead of dates. |
+| `cal --help`     | Display help information for `cal`.                        | `cal --help`    | Shows usage guide.                          |
+| `cal --version`  | Display version and license info.                          | `cal --version` | Prints version details.                     |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 whereis command</summary>
+
+# Linux Cheat Sheet: `whereis` Command
+
+| Command / Option      | Description                                                                  | Example Usage         | Example Output / Notes                         |
+| --------------------- | ---------------------------------------------------------------------------- | --------------------- | ---------------------------------------------- |
+| `whereis command`     | Locate the binary, source, and manual page files for a command.              | `whereis ls`          | `ls: /bin/ls /usr/share/man/man1/ls.1.gz`      |
+| `whereis -b command`  | Search only for binary files.                                                | `whereis -b ls`       | Shows only binary path for `ls`.               |
+| `whereis -m command`  | Search only for manual (man) files.                                          | `whereis -m ls`       | Shows only man page location.                  |
+| `whereis -s command`  | Search only for source files.                                                | `whereis -s ls`       | Shows source file location if available.       |
+| `whereis -u command`  | Search for unusual entries (commands missing man page or source).            | `whereis -u ls`       | Lists binaries without associated docs/source. |
+| `whereis -f filename` | Treat argument as filename, not command.                                     | `whereis -f myscript` | Searches for `myscript` file.                  |
+| `whereis -l`          | Display directories where `whereis` searches for binaries, sources, and man. | `whereis -l`          | Prints search paths used by `whereis`.         |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 disk free (df) command</summary>
+
+# Linux Cheat Sheet: df Command
+
+| Command / Option | Description                                              | Example Usage  | Example Output / Notes                             |
+| ---------------- | -------------------------------------------------------- | -------------- | -------------------------------------------------- |
+| `df`             | Show disk space usage of all mounted filesystems.        | `df`           | Displays blocks used, available, and mount points. |
+| `df -h`          | Human-readable output (sizes in KB, MB, GB).             | `df -h`        | Easier to read disk usage like `20G`, `512M`.      |
+| `df -a`          | Include pseudo, duplicate, and inaccessible filesystems. | `df -a`        | Lists all filesystems including special ones.      |
+| `df -T`          | Show filesystem type along with usage.                   | `df -T`        | Displays ext4, tmpfs, etc.                         |
+| `df -i`          | Show inode information instead of block usage.           | `df -i`        | Displays inode count and usage.                    |
+| `df -k`          | Show sizes in kilobytes.                                 | `df -k`        | Outputs disk usage in KB units.                    |
+| `df -m`          | Show sizes in megabytes.                                 | `df -m`        | Outputs disk usage in MB units.                    |
+| `df --help`      | Display help information for `df`.                       | `df --help`    | Shows usage guide.                                 |
+| `df --version`   | Display version and license info.                        | `df --version` | Prints version details.                            |
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
+
+<summary> 📂 count (wc) command</summary>
+
+# Linux Cheat Sheet: `wc` Command
+
+| Command / Option | Description                                   | Example Usage            | Example Output / Notes                                |
+| ---------------- | --------------------------------------------- | ------------------------ | ----------------------------------------------------- |
+| `wc file.txt`    | Print line, word, and byte counts for a file. | `wc file.txt`            | `10 50 300 file.txt` → 10 lines, 50 words, 300 bytes. |
+| `wc -l file.txt` | Print only the line count.                    | `wc -l file.txt`         | `10 file.txt` → 10 lines.                             |
+| `wc -w file.txt` | Print only the word count.                    | `wc -w file.txt`         | `50 file.txt` → 50 words.                             |
+| `wc -c file.txt` | Print only the byte count.                    | `wc -c file.txt`         | `300 file.txt` → 300 bytes.                           |
+| `wc -m file.txt` | Print only the character count.               | `wc -m file.txt`         | `300 file.txt` → 300 characters.                      |
+| `wc -L file.txt` | Print length of the longest line.             | `wc -L file.txt`         | `25 file.txt` → longest line has 25 characters.       |
+| `wc file1 file2` | Print counts for multiple files and a total.  | `wc file1.txt file2.txt` | Shows counts for each file plus grand total.          |
+
+</details>
+
 </details>
 
 <details>
-<summary> 📂 '' command</summary>
-  
-</details>
 
-<details>
-<summary> 📂 '' command</summary>
-  
+<summary><span style="font-size:1.5em; font-weight:bold;">📝Complete Linux commands </summary>
+
+#### 🔗 [Complete Linux Commands](https://www.geeksforgeeks.org/linux-unix/linux-commands/)
+
 </details>
