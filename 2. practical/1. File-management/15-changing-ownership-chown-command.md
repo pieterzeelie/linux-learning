@@ -42,7 +42,7 @@ ls -l /opt
 ### Scenario
 You want to update ownership only if the file is currently owned by a specific user.
 ### Commands
-```sudo chown --from=root pieter report.txt```
+`sudo chown --from=root pieter report.txt`
 
 
 
@@ -50,7 +50,7 @@ You want to update ownership only if the file is currently owned by a specific u
 ### Scenario
 You want to update the group only if it currently belongs to devteam.
 ### Commands
-```sudo chown --from=:devteam :admins report.txt```
+`sudo chown --from=:devteam :admins report.txt`
 
 
 
@@ -90,13 +90,13 @@ ls -l link_report
 ### Scenario
 You want to see exactly what chown is doing.
 ### Commands
-```sudo chown -v pieter report.txt```
+`sudo chown -v pieter report.txt`
 
 ## 11. Suppress Errors When Changing Ownership (-f)
 ### Scenario
 You’re running a script and want to avoid noisy errors.
 ### Commands
-```sudo chown -f pieter missingfile.txt```
+`sudo chown -f pieter missingfile.txt`
 
 
 
