@@ -44,7 +44,7 @@ There are two types: **Hard Links** and **Soft (Symbolic) Links**.
 | Directory linking   | Not allowed                | Allowed                          |
 | If original deleted | Still accessible           | Becomes dangling                 |
 | Size                | Same as original           | Size = length of target path     |
-| Command             | `ln file linkname`         | `ln -s file linkname`            |
+| Command             | `ln file linkname`         | `ln -s file linkname`            |                                                   
 
 
 

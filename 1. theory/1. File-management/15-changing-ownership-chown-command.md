@@ -99,7 +99,7 @@ Applies ownership changes to all files and subdirectories.
 
 If you want, I can also generate:
 - a permissions + ownership cheat sheet,
-- a visual diagram of how ownership works,
+- a visual diagram of how ownership works,                                                                                                  
 - or a full Linux permissions chapter for your DevOps repo.
 Just tell me and I’ll build it.
 
